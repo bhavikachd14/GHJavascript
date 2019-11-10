@@ -1,0 +1,11 @@
+function outer (){
+var x = 'outer variable';
+return function ()
+{
+var y ='inner function variable'
+console.log (x+y);
+}
+}
+
+var res1 = outer ();
+res1 ();
